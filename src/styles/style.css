@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Roboto:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+.app {
+  margin: auto;
+  width: 1025px;
+  height: 840px;
+}
+
+.jogo {
+  width: 935px;
+  margin-left: 40px;
+  margin-bottom: 70px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.forca {
+  width: 400px;
+  height: 467px;
+  position: relative;
+}
+
+.escolherPalavra {
+  width: 200px;
+  height: 60px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  background: #27ae60;
+  border-radius: 8px;
+  border: 0;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 775px;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.palavra {
+  height: 70px;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 70px;
+  position: absolute;
+  margin-top: 372px;
+  margin-left: 602px;
+}
+
+.letras {
+  width: 690px;
+  height: 90px;
+  gap: 12px;
+  margin-left: 210px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.letra {
+  width: 40px;
+  height: 40px;
+  color: #39739d;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  background: #e1ecf4;
+  border: 1px solid #7aa7c7;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+button:active {
+  transform: translateY(4px);
+}
+
+.letra:disabled {
+  color: #798a9f;
+  transform: translateY(0px);
+  background: #9faab5;
+}
+
+.escolherPalavra:disabled {
+  transform: translateY(0px);
+}
+
+.vencedor {
+  color: #27ae60;
+}
+
+.perdedor {
+  color: #f00;
+}
